@@ -1,0 +1,9 @@
+<mapper namespace="com.ebanma.cloud.dao.IUserDao">
+    <select id="findAll" resultType="com.ebanma.cloud.domain.User" parameterType="com.ebanma.cloud.domain.User">
+        select * from user
+    </select>
+
+    <select id="findByCondition" resultType="com.ebanma.cloud.domain.User" parameterType="com.ebanma.cloud.domain.User">
+        select * from user where id = #{id} and username = #{username}
+    </select>
+</mapper>

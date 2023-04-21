@@ -1,0 +1,14 @@
+<configuration>
+
+    <dataSource>
+        <property name="driverClass" value="com.mysql.cj.jdbc.Driver"></property>
+        <property name="url" value="jdbc:mysql://127.0.0.1:3308/mybatis-test?serverTimezone=UTC&amp;useUnicode=true&amp;characterEncoding=UTF-8&amp;rewriteBatchedStatements=true"></property>
+        <property name="username" value="root"></property>
+        <property name="password" value="mysql"></property>
+    </dataSource>
+
+    <mappers>
+        <mapper resource="mapper/UserMapper.xml"></mapper>
+    </mappers>
+
+</configuration>
